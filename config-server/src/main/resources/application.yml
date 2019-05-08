@@ -9,11 +9,11 @@ spring:
           username: miloEgon
           password:
       label: master
-#        native:
-#          search-locations: classpath:/shared
-  profiles:
-    active: native
   application:
     name: config-server
 server:
   port: 8769
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
